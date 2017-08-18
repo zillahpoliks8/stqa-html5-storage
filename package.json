@@ -1,5 +1,5 @@
 {
-  "name": "sqta-html5-storage",
+  "name": "stqa-html5-storage",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zillahpoliks8/sqta-html5-storage.git"
+    "url": "git+https://github.com/zillahpoliks8/stqa-html5-storage.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zillahpoliks8/sqta-html5-storage/issues"
+    "url": "https://github.com/zillahpoliks8/stqa-html5-storage/issues"
   },
-  "homepage": "https://github.com/zillahpoliks8/sqta-html5-storage#readme",
+  "homepage": "https://github.com/zillahpoliks8/stqa-html5-storage#readme",
   "dependencies": {
     "express": "^4.15.4"
   }

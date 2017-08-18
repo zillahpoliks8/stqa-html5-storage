@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  		<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+			<h1 class="title">Active Users</h1>
+			<table class="table table-inverse">
+			  <thead>
+			    <tr>
+			      <th>Profile Picture</th>
+			      <th>First Name</th>
+			      <th>Last Name</th>
+			      <th>Username</th>
+			    </tr>
+			  </thead>
+			  <tbody id="tblNames">
+			    <!-- <tr>
+			      <th scope="row">1</th>
+			      <td><a href="/mark">Mark</a></td>
+			      <td>Otto</td>
+			      <td>@indianrapper</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">2</th>
+			      <td><a href="/jacob">Jacob</a></td>
+			      <td>Thornton</td>
+			      <td>@fatass</td>
+			    </tr>
+			    <tr>
+			      <th scope="row">3</th>
+			      <td><a href="/larry">Larry</a></td>
+			      <td>the Bird</td>
+			      <td>@theLegend</td>
+			    </tr> -->
+			    
+			  </tbody id = "tblNames">
+			</table>
+			<div class="form-group ">
+					<a href="/" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Log Out</a>
+			</div>
+		</div>
+		<script>
+					let jns_parse = JSON.parse(localStorage.getItem('json_accounts'));
+					console.log(jns_parse);
+
+					let html=``;
+					jns_parse.map((name)=>{
+			
+					html += `
+					<tr>
+			      		<td><img src="http://lorempixel.com/100/100/people/"/></td>
+			      		<td>${name.fname}</td>
+			      		<td>${name.lname}</td>
+			      		<td>${name.email}</td>
+			    	</tr>
+					`;
+					});
+					document.querySelector('#tblNames').innerHTML = html;
+		</script>
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

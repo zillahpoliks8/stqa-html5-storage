@@ -1,1 +1,0 @@
-# sqta-html5-storage
