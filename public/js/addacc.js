@@ -30,13 +30,12 @@ function createUser(){
 	let email = document.querySelector('#email').value;
 	let username = document.querySelector('#username').value;
 	let password = document.querySelector('#password').value;
-	let confirm = document.querySelector('#confirm').value;
+	// let confirm = document.querySelector('#confirm').value;
 	let newAccount = {
 		name: name,
 		email: email,
 		username: username,
-		password: password,
-		confirm: confirm
+		password: password
 	}
 	json_accounts.push(newAccount);
 
