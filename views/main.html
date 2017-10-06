@@ -11,9 +11,18 @@
 
 </head>
 
+
+<form action="/students" method="POST">
+    <input type="text" placeholder="studentid" name="studentid" id="studentid">
+    <input type="text" placeholder="firstname" name="firstname" id="firstname">
+    <input type="text" placeholder="lastname" name="lastname" id="lastname">
+    <br>
+    <button type="submit">Create</button>
+  </form>
+
 <body>
   <div class="form">
-      <form action="/regis" method="post">
+      <form action="/regis" method="post" method="POST">
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
         <li class="tab"><a href="#login">Log In</a></li>
